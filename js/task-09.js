@@ -8,6 +8,7 @@ function getRandomHexColor() {
 }
 
 function onBtnChangeColorClick() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  nameLabel.textContent = document.body.style.backgroundColor;
+  let bgColor = getRandomHexColor();
+  document.body.style.background = bgColor;
+  nameLabel.textContent = bgColor;
 }
