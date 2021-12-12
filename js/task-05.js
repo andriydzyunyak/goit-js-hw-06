@@ -4,5 +4,5 @@ const nameLabel = document.querySelector("#name-output");
 input.addEventListener("input", onInput);
 
 function onInput(event) {
-  nameLabel.textContent = event.currentTarget.value;
+  nameLabel.textContent = event.currentTarget.value || "Anonymous";
 }

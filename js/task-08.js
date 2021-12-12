@@ -12,11 +12,14 @@ function onFormSubmit(event) {
   if (mail.value === "" || password.value === "") {
     window.alert("Все поля должны быть заполнены");
   } else {
-    const formData = new FormData(event.currentTarget);
-    formData.forEach((value, name) => {
-      console.log("name", name);
-      console.log("value", value);
-    });
+    const data = { Email: mail.value, Password: password.value };
+    console.log(data);
+
+    // const formData = new FormData(event.currentTarget);
+    // formData.forEach((value, name) => {
+    //   //console.log("name", name);
+    //   //console.log("value", value);
+    // });
     event.currentTarget.reset();
   }
 }
